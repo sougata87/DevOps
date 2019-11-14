@@ -1,12 +1,8 @@
-pipeline {
-    agent {
-        docker { image 'java' }
-    }
-    stages {
-        stage('Test') {
-            steps {
-                sh 'hostname'
-            }
-        }
+node {
+    checkout scm
+    def testImage = docker.build("test-image", "./dockerfiles/test") 
+
+    testImage.inside {
+        sh 'make test'
     }
 }
