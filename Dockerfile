@@ -1,7 +1,4 @@
-FROM python:3
-
-ADD my_script.py /
-
-RUN pip install pystrich
-
-CMD [ "python", "./my_script.py" ]
+steps:
+task: UsePythonVersion@0
+  inputs:
+    versionSpec: '3.6'
