@@ -25,5 +25,10 @@ stages:
       inputs:
         command: build
         dockerfile: '$(Build.SourcesDirectory)/Dockerfile'
+        
         tags: |
           $(tag)
+    - task: PythonScript@0
+      inputs:
+          scriptSource: 'inline'
+          script: 'print("hello")'
