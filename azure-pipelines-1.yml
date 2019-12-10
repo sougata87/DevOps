@@ -1,4 +1,8 @@
 # Docker
+- task: PythonScript@0
+  inputs:
+    scriptSource: 'inline'
+    script: 'print("Welcome to Devops")'
 # Build a Docker image 
 # https://docs.microsoft.com/azure/devops/pipelines/languages/docker
 
