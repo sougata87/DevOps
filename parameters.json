@@ -1,0 +1,30 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "subscriptionId": {
+            "value": "90783fd6-899d-4c87-94ec-46d919da77ee"
+        },
+        "name": {
+            "value": "SSTestDEV-100"
+        },
+        "location": {
+            "value": "Central US"
+        },
+        "hostingEnvironment": {
+            "value": ""
+        },
+        "hostingPlanName": {
+            "value": "ASP-mytestresources-a71c"
+        },
+        "serverFarmResourceGroup": {
+            "value": "mytestresources"
+        },
+        "alwaysOn": {
+            "value": false
+        },
+        "linuxFxVersion": {
+            "value": "TOMCAT|8.5-java11"
+        }
+    }
+}
